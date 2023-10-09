@@ -1,8 +1,9 @@
 package com.example.handhtest
 import kotlin.random.Random
 
-open class Creature(val name: String, val attack: Int, val defense: Int, var health: Int, val minDamage: Int, val maxDamage: Int) {
-    open fun calculateAttackModifier(target: Creature): Int {
+open class Creature(val name: String, val attack: Int, val defense: Int, val maxHealth: Int, var minDamage: Int, val maxDamage: Int) {
+    var currentHealth: Int = maxHealth
+    fun calculateAttackModifier(target: Creature): Int {
         val attackModifier = attack - target.defense + 1
         return if (attackModifier > 0) attackModifier else 1
     }
@@ -15,16 +16,13 @@ open class Creature(val name: String, val attack: Int, val defense: Int, var hea
         val success = diceRolls[0] >= 4
 
         if (success) {
-            target.takeDamage(calculateDamage())
+            target.takeDamage()
         }
         else {
-            val textMessage = "Упс, промах!"
+            println("Oops, miss!")
         }
     }
-    fun takeDamage(damage: Int) {
-        health -= damage
-        if (health < 0) {
-            health = 0
-        }
+    open fun takeDamage() {
+        currentHealth -= calculateDamage()
     }
 }
