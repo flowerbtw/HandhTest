@@ -1,8 +1,8 @@
 package com.example.handhtest
 
 class Player : Creature("Knight", 20, 20, 100, 30, 50) {
-    override fun takeDamage() {
-        super.takeDamage()
+    override fun takeDamage(damage: Int) {
+        super.takeDamage(damage)
         if (currentHealth <= 0) {
             println("The game is over. You are dead")
         }
