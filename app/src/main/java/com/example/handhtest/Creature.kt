@@ -18,7 +18,7 @@ open class Creature(val name: String, val attack: Int, val defense: Int, var hea
             target.takeDamage(calculateDamage())
         }
         else {
-            val textMessage = "Упс! Промах"
+            val textMessage = "Упс, промах!"
         }
     }
     fun takeDamage(damage: Int) {
