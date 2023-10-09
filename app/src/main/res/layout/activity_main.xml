@@ -43,9 +43,8 @@
         android:id="@+id/textMessageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/OptimusPrincepsSemiBold"
-        android:text="Log"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:gravity="center"
@@ -55,11 +54,11 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/healButton"
+        android:id="@+id/fightButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/roundcorners"
         android:fontFamily="@font/OptimusPrincepsSemiBold"
         android:text="Fight"
