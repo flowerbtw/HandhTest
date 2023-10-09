@@ -153,22 +153,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:layout_marginStart="110dp"
-        android:background="#000000"
+        android:background="@drawable/roundcorners"
         android:fontFamily="@font/OptimusPrincepsSemiBold"
         android:text="Heal"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/textMessageView"
+        app:layout_constraintEnd_toStartOf="@id/attackButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/attackButton" />
+        app:layout_constraintTop_toBottomOf="@id/textMessageView" />
 
     <Button
         android:id="@+id/attackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:layout_marginStart="15dp"
-        android:background="#000000"
+        android:background="@drawable/roundcorners"
         android:fontFamily="@font/OptimusPrincepsSemiBold"
         android:text="Attack"
         android:textColor="#FFFFFF"
@@ -197,7 +195,6 @@
         android:textColor="#FF0000"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@id/playerDefenseTextView"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/playerHealthImageView" />
 
     <ImageView
@@ -257,7 +254,6 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/playerDefenseTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
