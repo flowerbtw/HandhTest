@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FEFEFE">
+
+    <View
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/OptimusPrincepsSemiBold"
+        android:text="@string/mobile_souls"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/titleView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/monsterNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/OptimusPrincepsSemiBold"
+        android:text="Dark Green Troll"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/titleView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/monsterAttackImageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/attack_icon"
+        app:layout_constraintTop_toBottomOf="@id/monsterNameTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/monsterAttackTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/OptimusPrincepsSemiBold"
+        android:text="25"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/monsterNameTextView"
+        app:layout_constraintStart_toEndOf="@id/monsterAttackImageView" />
+
+    <ImageView
+        android:id="@+id/monsterDefenseImageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/defense_icon"
+        app:layout_constraintTop_toBottomOf="@id/monsterNameTextView"
+        app:layout_constraintStart_toEndOf="@id/monsterAttackTextView" />
+
+    <TextView
+        android:id="@+id/monsterDefenseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/OptimusPrincepsSemiBold"
+        android:text="15"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/monsterNameTextView"
+        app:layout_constraintStart_toEndOf="@id/monsterDefenseImageView" />
+
+    <TextView
+        android:id="@+id/monsterDamageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/OptimusPrincepsSemiBold"
+        android:text="DMG: 40-60"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/monsterNameTextView"
+        app:layout_constraintStart_toEndOf="@id/monsterDefenseTextView" />
+
+    <ImageView
+        android:id="@+id/monsterHealthImageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/health_icon"
+        app:layout_constraintTop_toBottomOf="@id/monsterAttackImageView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/monsterHealthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/OptimusPrincepsSemiBold"
+        android:text="150"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/monsterAttackTextView"
+        app:layout_constraintStart_toEndOf="@id/monsterHealthImageView" />
+
+    <ImageView android:id="@+id/monsterImageView"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/dark_green_troll_meet_image"
+        app:layout_constraintTop_toBottomOf="@id/monsterHealthImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textMessageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/OptimusPrincepsSemiBold"
+        android:text="Log"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintTop_toBottomOf="@id/monsterImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/healButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/roundcorners"
+        android:fontFamily="@font/OptimusPrincepsSemiBold"
+        android:text="Heal"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@id/attackButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textMessageView" />
+
+    <Button
+        android:id="@+id/attackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/roundcorners"
+        android:fontFamily="@font/OptimusPrincepsSemiBold"
+        android:text="Attack"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/textMessageView"
+        app:layout_constraintStart_toEndOf="@id/healButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/playerHealthImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/health_icon"
+        app:layout_constraintBottom_toTopOf="@id/playerDefenseTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/playerHealthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/OptimusPrincepsSemiBold"
+        android:text="100"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/playerDefenseTextView"
+        app:layout_constraintStart_toEndOf="@id/playerHealthImageView" />
+
+    <ImageView
+        android:id="@+id/playerAttackImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/attack_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toStartOf="parent"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <TextView
+        android:id="@+id/playerAttackTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/OptimusPrincepsSemiBold"
+        android:text="20"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/playerAttackImageView" />
+
+    <ImageView
+        android:id="@+id/playerDefenseImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/defense_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/playerAttackTextView" />
+
+    <TextView
+        android:id="@+id/playerDefenseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/OptimusPrincepsSemiBold"
+        android:text="20"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/playerDefenseImageView" />
+
+    <TextView
+        android:id="@+id/playerDamageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/OptimusPrincepsSemiBold"
+        android:text="DMG: 30-50"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/playerDefenseTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
