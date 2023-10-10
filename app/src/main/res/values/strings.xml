@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">HandhTest</string>
     <string name="mobile_souls">Mobile Souls</string>
+    <string name="fight">Fight</string>
+    <string name="heal">Heal</string>
+    <string name="attack">Attack</string>
+    <string name="welcome_text">Welcome to the Mobile Souls, where dangers, dark secrets, and powerful enemies await you. Prepare for a treacherous journey, where your survival relies on battles, skill improvement, and overcoming challenges. Guide your character through gloomy locations and uncover ancient mysteries. Are you ready for this challenge? Mobile Souls awaits you</string>
 </resources>
